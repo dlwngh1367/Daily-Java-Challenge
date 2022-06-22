@@ -2,7 +2,7 @@
 public class Account {
 	private String number;
 	private double balance;
-	private String customername;
+	private String customerName;
 	private String customerEmailAddress;
 	private String customerPhoneNumber;
 	
@@ -16,10 +16,16 @@ public class Account {
 		System.out.println("Account constructore with parameters called");
 		this. number = number;
 		this.balance = balance;
-		this.customername = customerName;
+		this.customerName = customerName;
 		this.customerPhoneNumber = customerPhoneNumber;
 	}
 	
+	
+	
+	public Account(String customerName, String customerEmailAddress, String customerPhoneNumber) {
+		this("99999",100.55, customerName, customerEmailAddress, customerPhoneNumber);
+	}
+
 	public void deposit(double depositAmount) {
 		this.balance += depositAmount;
 		System.out.println("Deposit of " + depositAmount + " made. New balance is "+ this.balance);
@@ -46,11 +52,11 @@ public class Account {
 	public void setBalance(double balance) {
 		this.balance = balance;
 	}
-	public String getCustomername() {
-		return customername;
+	public String getCustomerName() {
+		return customerName;
 	}
-	public void setCustomername(String customername) {
-		this.customername = customername;
+	public void setCustomerName(String customername) {
+		this.customerName = customername;
 	}
 	public String getCustomerEmailAddress() {
 		return customerEmailAddress;
