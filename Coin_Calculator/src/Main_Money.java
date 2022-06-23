@@ -32,13 +32,6 @@ public class Main_Money {
 		
 		System.out.println("Testing work method: " + total);
 
-		
-		
-		
-		
-		
-
-
 	}
 
 }
