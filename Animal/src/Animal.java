@@ -63,5 +63,5 @@ public class Animal {
 		public void setWeight(int weight) {
 			this.weight = weight;
 		}
-		}
+}
 		
