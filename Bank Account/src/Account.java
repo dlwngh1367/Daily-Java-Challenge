@@ -5,25 +5,38 @@ public class Account {
 	private String customerName;
 	private String customerEmailAddress;
 	private String customerPhoneNumber;
+	private double customerJuho;
+	
+	
+	
+	public Account(String number, double balance, String customerName, String customerEmailAddress, double phoneNumber, double customerJuho) {
+	
+	}
+	
+	public double getCustomerJuho() {
+		return customerJuho;
+	}
 	
 	public Account() {
-		this("56789",2.50,"Default name", "Default address", "default phone");
+		this("내 진짜 번호",2.50,"Default name", "Default address", "default phone",1);
 		System.out.println("Empty constructor called");
 	}
 	
 	public Account(String number, double balance, String customerName, String customerEmailAddress,
-			String customerphonenumber) {
+			String customerPhoneNumber, double customerJuho) {
 		System.out.println("Account constructore with parameters called");
 		this. number = number;
 		this.balance = balance;
 		this.customerName = customerName;
+		this.customerEmailAddress = customerEmailAddress;
 		this.customerPhoneNumber = customerPhoneNumber;
+		this.customerJuho = customerJuho;
 	}
 	
 	
 	
-	public Account(String customerName, String customerEmailAddress, String customerPhoneNumber) {
-		this("99999",100.55, customerName, customerEmailAddress, customerPhoneNumber);
+	public Account(String customerName, String customerEmailAddress, String customerPhoneNumber, double customerJuho) {
+		this("99999",100.55, customerName, customerEmailAddress, customerPhoneNumber, customerJuho);
 	}
 
 	public void deposit(double depositAmount) {
