@@ -29,7 +29,7 @@ public class Main {
 		modifyArray(myIntArray);
 		
 		System.out.println("after modify myIntArray= " +Arrays.toString(myIntArray));
-		System.out.println("after modify anotherArray= " + Arrays.toString(anotherArray));
+		System.out.println("after modify anotherArray= " +Arrays.toString(anotherArray));
 	}
 
 		private static void modifyArray(int[] array) {
