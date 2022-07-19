@@ -28,7 +28,7 @@ public class Main {
 		anotherArray = new int[] {4, 5, 6, 7, 8};
 		modifyArray(myIntArray);
 		
-		System.out.println("after modify myIntArray= " + Arrays.toString(myIntArray));
+		System.out.println("after modify myIntArray= " +Arrays.toString(myIntArray));
 		System.out.println("after modify anotherArray= " + Arrays.toString(anotherArray));
 	}
 
